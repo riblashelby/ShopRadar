@@ -1,7 +1,7 @@
 import random
 from typing import List, Optional
 from datetime import datetime
-from app.models import Product
+from app.db.models import Product
 from app.parsers.base import BaseParser
 
 class MagnitParser(BaseParser):
