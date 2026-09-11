@@ -1,4 +1,1 @@
-```
-# Build artifacts
-Dockerfile
-```
+(frontend/src/pages/ShoppingListsPage.jsx is a source file, so no .gitignore rules needed)
