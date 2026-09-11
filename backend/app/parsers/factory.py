@@ -12,6 +12,7 @@ from app.config import settings
 
 # Import all available parsers
 from app.parsers.pyaterochka_parser import PyaterochkaParser
+from app.parsers.magnit_parser import MagnitParser
 
 
 class ParserRegistry:
@@ -62,8 +63,8 @@ class ParserRegistry:
 def init_registry():
     """Initialize the parser registry with all available parsers."""
     ParserRegistry.register(StoreChain.PYATEROCHKA.value, PyaterochkaParser)
+    ParserRegistry.register(StoreChain.MAGNIT.value, MagnitParser)
     # Add more parsers here as they are implemented:
-    # ParserRegistry.register(StoreChain.MAGNIT.value, MagnitParser)
     # ParserRegistry.register(StoreChain.CHIZHIK.value, ChizhikParser)
     # ParserRegistry.register(StoreChain.KB.value, KBParser)
     
