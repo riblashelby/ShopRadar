@@ -24,9 +24,9 @@ services:
     networks:
       - cheapcart_network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
-      interval: 30s
-      timeout: 10s
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 10s
+      timeout: 5s
       retries: 3
       start_period: 40s
 
